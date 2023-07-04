@@ -1,11 +1,13 @@
 #Name: MENDIOLA, LOGIE A | Year&Sec: BSCPE 1-5 | OBJECT ORIENTED PROGRAMMING | ASSIGNMENT #9
 
-print("======================================================================= INSTRUCTIONS ==============================================================================")                            
-print("                                     Design a program that creates a Car object then calls the accelerate method five times                                        ")
-print("                                    After each call to the accelerate method, get the current speed of the car and display it                                      ")
-print("                                                           Then call the brake method five times                                                                   ")
-print("                                        After each call to the brake method get the current speed of the car and display it                                        ")
-print("===================================================================================================================================================================")
+import pyfiglet
+from simple_colors import *
+print(blue("======================================================================= INSTRUCTIONS =============================================================================="))                            
+print(blue("                                     Design a program that creates a Car object then calls the accelerate method five times                                        "))
+print(blue("                                    After each call to the accelerate method, get the current speed of the car and display it                                      "))
+print(blue("                                                           Then call the brake method five times                                                                   "))
+print(blue("                                        After each call to the brake method get the current speed of the car and display it                                        "))
+print(blue("==================================================================================================================================================================="))
 
 class Car:
     def __init__(self, year_model, make, speed = 0):
