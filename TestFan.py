@@ -8,39 +8,34 @@ class Fan:
         self.__color = color
         self.__power = power
 
-    #Fan Speed: SLOW
-    def speed_SLOW(self):
-        speed = 1
-        Slow = speed
-        return Slow
+    #Fan Speed
+    def get_speed(self):
+        return self.__speed
     
-    #Fan Speed: MEDIUM
-    def speed_MEDIUM(self):
-        speed = 2
-        Medium = speed
-        return Medium
-    
-    #Fan Speed: FAST
-    def speed_FAST(self):
-        speed = 3
-        Fast = speed
-        return Fast
-    
+    def set_speed(self, speed):
+        self.__speed = speed
+
     #Fan Radius
-    def radius(self):
-        self.__radius = 5
+    def get_radius(self):
         return self.__radius
     
+    def set_radius(self, radius):
+        self.__radius = radius
+    
     #Fan Color
-    def color(self):
-        self.__color = "blue"
+    def get_color(self):
         return self.__color
     
+    def set_color(self, color):
+        self.__color = color
+    
+    
     #Fan Power
-    def power(self):
-        on = False
-        self.__power = on
-        return self.__power
+    def get_power(self):
+       return self.__power
+    
+    def set_power(self, power):
+        self.__power = power
     
     #accessing private members
     def show(self):
