@@ -24,3 +24,21 @@ class Car:
     #getter method for speed    
     def get_speed(self):
         return self.__speed
+
+def show():
+    #creating an object for Car's properties
+    Kotse = Car(2017,"Lamborghini")
+
+    #looping car's acceleration five times
+    for i in range(5):
+        Kotse.accelerate()
+
+        #Displaying Car's Acceleration and Current Speed
+        print("\n\n\nThe Car is Accelerating!\nCurrent Speed:", Kotse.get_speed())
+    
+    #looping car's brake five times
+    for i in range(5):
+        Kotse.brake()
+        print("\n\n\nThe Car is Braking!\nCurrent Speed:", Kotse.get_speed())
+
+show()
