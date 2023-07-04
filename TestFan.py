@@ -28,8 +28,8 @@ class Fan:
     
     #Fan Radius
     def radius(self):
-        radius = 5
-        return radius
+        self.__radius = 5
+        return self.__radius
     
     #Fan Color
     def color(self):
@@ -48,6 +48,12 @@ class Fan:
     
     #creating fan objects of the class_Fan
 fan_one = Fan("FAST", 10, "yellow", True)
+fan_two = Fan("MEDIUM", 5, "blue", False)
 
+#Display Fan One Properties
 print("\nFan One Properties:\n")
 fan_one.show()
+
+#Display Fan Two Properties
+print("\nFan Two Properties:\n")
+fan_two.show()
