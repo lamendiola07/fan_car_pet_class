@@ -2,7 +2,7 @@
 print("======================================================================= INSTRUCTIONS ==============================================================================\n*Write a test program named TestFan that creates two Fan objects.\n*For the first object, assign the maximum speed, radius 10, color yellow, and turn it on.\n*Assign medium speed, radius 5, color blue, and turn it off for the second object.\n*Display each object’s speed, radius, color, and on properties\n====================================================================================================================================================================")
 
 class Fan:
-    def __init__(self, speed, radius, color, power):
+    def __init__(self, speed = "SLOW", radius = 5, color = "blue", power = False):
         self.__speed = speed
         self.__radius = radius
         self.__color = color
@@ -39,18 +39,23 @@ class Fan:
     def set_power(self, power):
         self.__power = power
     
-    #accessing private members
-    def show(self):
-        print("Speed:", self.__speed,"\nRadius:", self.__radius, "\nColor:", self.__color, "\nPower:", self.__power)
+
+#accessing private members
+def show():
+
+    #creating fan object #1
+    fan_properties = Fan("FAST", 10, "yellow", True)
     
-    #creating fan objects of the class_Fan
-fan_one = Fan("FAST", 10, "yellow", True)
-fan_two = Fan("MEDIUM", 5, "blue", False)
+    #Display Fan One Properties
+    print("\nFan One's Properties:\nSpeed:", fan_properties.get_speed() ,"\nRadius:", fan_properties.get_radius(), "\nColor:", fan_properties.get_color(), "\nPower:", fan_properties.get_power())
+        
+    #creating fan object #2
+    fan_properties.set_speed("MEDIUM")
+    fan_properties.set_radius(5)
+    fan_properties.set_color("blue")
+    fan_properties.set_power("False")
 
-#Display Fan One Properties
-print("\nFan One Properties:\n")
-fan_one.show()
-
-#Display Fan Two Properties
-print("\nFan Two Properties:\n")
-fan_two.show()
+    #Display Fan Two Properties
+    print("\nFan Two's Properties:\nSpeed:", fan_properties.get_speed() ,"\nRadius:", fan_properties.get_radius(), "\nColor:", fan_properties.get_color(), "\nPower:", fan_properties.get_power())
+        
+show()
