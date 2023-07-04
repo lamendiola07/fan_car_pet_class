@@ -1,5 +1,8 @@
 #Name: MENDIOLA, LOGIE A | Year&Sec: BSCPE 1-5 | OBJECT ORIENTED PROGRAMMING | ASSIGNMENT #9
-print("======================================================================= INSTRUCTIONS ==============================================================================\n*Write a test program named TestFan that creates two Fan objects.\n*For the first object, assign the maximum speed, radius 10, color yellow, and turn it on.\n*Assign medium speed, radius 5, color blue, and turn it off for the second object.\n*Display each object’s speed, radius, color, and on properties\n====================================================================================================================================================================")
+import pyfiglet
+from simple_colors import *
+
+print(yellow("======================================================================= INSTRUCTIONS ==============================================================================\n                                             *Write a test program named TestFan that creates two Fan objects.\n                                             *For the first object, assign the maximum speed, radius 10, color yellow, and turn it on.\n                                             *Assign medium speed, radius 5, color blue, and turn it off for the second object.\n                                             *Display each object’s speed, radius, color, and on properties\n===================================================================================================================================================================="))
 
 class Fan:
     def __init__(self, speed = "SLOW", radius = 5, color = "blue", power = False):
