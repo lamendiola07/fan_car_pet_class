@@ -15,12 +15,14 @@ class Fan:
     def set_speed(self, speed):
         self.__speed = speed
 
+
     #Fan Radius
     def get_radius(self):
         return self.__radius
     
     def set_radius(self, radius):
         self.__radius = radius
+    
     
     #Fan Color
     def get_color(self):
