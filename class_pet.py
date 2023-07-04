@@ -40,7 +40,23 @@ class Pet:
     def set_age(self, age):
         self.__age = age
 
+def show():
+    #Promp user to enter pet's name
+    pet_name = input("What is your pet's name? ")
 
+    #Prompt user to enter pet's animal type
+    pet_type = input("What is your pet's animal type? ")
+
+    #Prompt user to enter pet's age
+    pet_age = input("What is your pet's age? ")
+
+    #User's Pet as Object's Attribute
+    user_pet = Pet(pet_name, pet_type, pet_age) 
+    
+    #Display Object's Attribute
+    print("\nPet's Properties","\nName:", user_pet.get_name(),"\nAnimal Type:", user_pet.get_animal_type(), "\nAge:", user_pet.get_age())
+
+show()
     
 
 
