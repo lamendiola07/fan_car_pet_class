@@ -26,6 +26,25 @@ class Fan:
         Fast = fan_fast
         return Fast
     
+    #Fan Radius
+    def radius(self):
+        radius = 5
+        return radius
+    
+    #Fan Color
+    def color(self):
+        color = "blue"
+        return color
+    
+    #Fan Power
+    def power(self):
+        on = False
+        power = on
+        return power
+        
+    
+
+    
 
     
     #creating fan objects of the class_Fan
