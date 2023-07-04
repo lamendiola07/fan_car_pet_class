@@ -10,20 +10,20 @@ class Fan:
 
     #Fan Speed: SLOW
     def speed_SLOW(self):
-        fan_slow = 1
-        Slow = fan_slow
+        speed = 1
+        Slow = speed
         return Slow
     
     #Fan Speed: MEDIUM
     def speed_MEDIUM(self):
-        fan_medium = 2
-        Medium = fan_medium
+        speed = 2
+        Medium = speed
         return Medium
     
     #Fan Speed: FAST
     def speed_FAST(self):
-        fan_fast = 3
-        Fast = fan_fast
+        speed = 3
+        Fast = speed
         return Fast
     
     #Fan Radius
@@ -33,21 +33,21 @@ class Fan:
     
     #Fan Color
     def color(self):
-        color = "blue"
-        return color
+        self.__color = "blue"
+        return self.__color
     
     #Fan Power
     def power(self):
         on = False
-        power = on
-        return power
-        
+        self.__power = on
+        return self.__power
     
-
-    
-
+    #accessing private members
+    def show(self):
+        print("Speed:", self.__speed,"\nRadius:", self.__radius, "\nColor:", self.__color, "\nPower:", self.__power)
     
     #creating fan objects of the class_Fan
-        #place holder for object template:
-            #first object = Fan1(FAST, 10, yellow, ON)
-            #second object = Fan2(MEDIUM, 5, blue, OFF)
+fan_one = Fan("FAST", 10, "yellow", True)
+
+print("\nFan One Properties:\n")
+fan_one.show()
