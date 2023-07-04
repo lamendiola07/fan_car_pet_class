@@ -1,10 +1,13 @@
 #Name: MENDIOLA, LOGIE A | Year&Sec: BSCPE 1-5 | OBJECT ORIENTED PROGRAMMING | ASSIGNMENT #9
 
-print("======================================================================= INSTRUCTIONS ==============================================================================")
-print("                 Write a program that creates an object of the class and prompts the user to enter the name, type, and age of his or her pet.                      ")
-print("                                                  This data should be stored as the object’s attributes                                                            ")
-print("                               Use the object’s accessor methods to retrieve the pet’s name, type, and age and display this data on the screen.                    ")
-print("===================================================================================================================================================================")
+import pyfiglet
+from simple_colors import *
+
+print(magenta("======================================================================= INSTRUCTIONS =============================================================================="))
+print(magenta("                 Write a program that creates an object of the class and prompts the user to enter the name, type, and age of his or her pet.                      "))
+print(magenta("                                                  This data should be stored as the object’s attributes                                                            "))
+print(magenta("                               Use the object’s accessor methods to retrieve the pet’s name, type, and age and display this data on the screen.                    "))
+print(magenta("==================================================================================================================================================================="))
 
 class Pet:
     def __init__(self, name, animal_type, age):
@@ -42,13 +45,13 @@ class Pet:
 
 def show():
     #Promp user to enter pet's name
-    pet_name = input("What is your pet's name? ")
+    pet_name = input(yellow("\nWhat is your pet's name? "))
 
     #Prompt user to enter pet's animal type
-    pet_type = input("What is your pet's animal type? ")
+    pet_type = input(yellow("\nWhat is your pet's animal type? "))
 
     #Prompt user to enter pet's age
-    pet_age = input("What is your pet's age? ")
+    pet_age = input(yellow("\nWhat is your pet's age? "))
 
     #User's Pet as Object's Attribute
     user_pet = Pet(pet_name, pet_type, pet_age) 
